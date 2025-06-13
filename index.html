@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Augmented Euclideanizing Flows: Stable and Flexible Sensorimotor Learning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -43,10 +43,26 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
-          onload="renderMathInElement(document.body);"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(document.body, {
+			  // customised options
+			  // • auto-render specific keys, e.g.:
+			  delimiters: [
+				  {left: '$$', right: '$$', display: true},
+				  {left: '$', right: '$', display: false},
+				  {left: '\\(', right: '\\)', display: false},
+				  {left: '\\[', right: '\\]', display: true}
+			  ],
+			  // • rendering keys, e.g.:
+			  throwOnError : false
+			});
+		});
+	</script>
 </head>
 <body>
 
@@ -56,66 +72,19 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+            <h1 class="title is-1 publication-title">Augmented Euclideanizing Flows: Stable and Flexible Sensorimotor Learning</h1>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/YOUR REPO HERE" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fab fa-github"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Code</span>
                 </a>
               </span>
             </div>
@@ -130,12 +99,12 @@
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/algorithm_framework.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Structure of AEF. The conditional normalizing flows model takes the robotic arm's end-effector position $\mathbf{x}_c$ as input and utilizes the representation $\mathbf{h}$ obtained from feature extraction of environmental images ${{\mathbf{x}}_{nc}}$ as conditions. This setup maps the inputs into a latent variable space. Within this space, a dynamical system is defined by $\mathbf{\dot{z}}=-\mathbf{z}$, where the velocity is modulated by fully connected layers and ensured to be positive through exponential transformation. Ultimately, the desired end-effector velocity output in task space is achieved by computing the inverse of the Jacobian matrix of latent variable $\mathbf{z}$ concerning ${{\mathbf{x}}_{c}}$, mapping the latent space velocity back to task space. 
-      </h2>
+    <div class="hero-body has-text-centered" >
+      <img src="static/images/algorithm_framework.svg" alt="MY ALT TEXT"/>  
     </div>
+    <p>
+      Structure of AEF. The conditional normalizing flows model takes the robotic arm's end-effector position $\mathbf{x}_c$ as input and utilizes the representation $\mathbf{h}$ obtained from feature extraction of environmental images ${{\mathbf{x}}_{nc}}$ as conditions. This setup maps the inputs into a latent variable space. Within this space, a dynamical system is defined by $\mathbf{\dot{z}}=-\mathbf{z}$, where the velocity is modulated by fully connected layers and ensured to be positive through exponential transformation. Ultimately, the desired end-effector velocity output in task space is achieved by computing the inverse of the Jacobian matrix of latent variable $\mathbf{z}$ concerning ${{\mathbf{x}}_{c}}$, mapping the latent space velocity back to task space. 
+    </p>
   </div>
 </section>
 <!-- End teaser video -->
@@ -158,95 +127,185 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- LASA 手写数据集仿真实验 -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">I. LASA Handwriting Dataset Experiment</h2>
+      <p>The learned vector fields and integrated trajectories produced by CNN, ANDPs and AEF models. The blue curves represent the expert demonstrations, while the green curves show the integral trajectories from the starting points of the demonstration. </p>
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <figure class="image is-16by9">
+            <img src="static/images/lasa_cnn.svg" alt="MY ALT TEXT" style="object-fit: contain;"/>
+          </figure>
+          <h2 class="subtitle has-text-centered">
+            The velocity fields and integrated trajectories learned by CNN on the LASA handwriting dataset.
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <figure class="image is-16by9">
+            <img src="static/images/lasa_andps.svg" alt="MY ALT TEXT" style="object-fit: contain;"/>
+          </figure>
+          <h2 class="subtitle has-text-centered">
+            The velocity fields and integrated trajectories learned by ANDPs on the LASA handwriting dataset.
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <figure class="image is-16by9">
+            <img src="static/images/lasa_aef.svg" alt="MY ALT TEXT" style="object-fit: contain;"/>
+          </figure>
+          <h2 class="subtitle has-text-centered">
+            The velocity fields and integrated trajectories learned by AEF on the LASA handwriting dataset.
+          </h2>
+        </div>
+
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <figure class="image is-16by9">
+            <img src="static/images/rmse_sea.svg" alt="MY ALT TEXT" style="object-fit: contain;"/>
+          </figure>
+          <h2 class="subtitle has-text-centered">
+            Box plots of RMSE and SEA for CNN, ANDPs, and AEF on the LASA handwriting dataset.
+          </h2>
+        </div>
     </div>
   </div>
-</div>
 </div>
 </section>
 <!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
 
 
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">II. Real-World Robot Experiment</h2>
+      <h3 class="title is-4">A. Path Selection to Reach the Target in Different Scenarios</h3>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <source src="static/videos/traj_box.mp4"
             type="video/mp4">
           </video>
+          <h2 class="subtitle has-text-centered">
+            Bypass a box from top.
+          </h2>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+            <source src="static/videos/traj_cup_holder.mp4"
             type="video/mp4">
           </video>
+          <h2 class="subtitle has-text-centered">
+            Bypass a cup holder from the right side.
+          </h2>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+            <source src="static/videos/traj_stick.mp4"
             type="video/mp4">
           </video>
+          <h2 class="subtitle has-text-centered">
+            Bypass a wooden stick from the left side.
+          </h2>
+        </div>
+        <div class="item item-image4 has-text-centered">
+          <!-- Your image here -->
+          <figure class="image is-16by9">
+            <img src="static/images/change_traj.svg" alt="MY ALT TEXT"/>
+          </figure>
+          <h2 class="subtitle has-text-centered">
+            Comparison between the demonstrated trajectories (dashed lines) and the executed trajectories (solid lines).
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title is-4">B. Reaching Different Target Points</h3>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/obj_left.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Reaching the left target point.
+          </h2>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/obj_middle.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Reaching the middle target point.
+          </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/obj_right.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Reaching the right target point.
+          </h2>
+        </div>
+        <div class="item item-image4">
+          <!-- Your image here -->
+          <figure class="image is-16by9">
+            <img src="static/images/move_obj.svg" alt="MY ALT TEXT"/>
+          </figure>
+          <h2 class="subtitle has-text-centered">
+            Comparison between the demonstrated trajectories (dashed lines) and the executed trajectories (solid lines).
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title is-4">C. Target Reaching under Human-Induced Disturbances</h3>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/obj_disturbance.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Reaching the target point under human-induced disturbances.
+          </h2>
+        </div>
+        <div class="item item-image4">
+          <!-- Your image here -->
+          <figure class="image is-16by9">
+            <img src="static/images/move_obj_disturbance.svg" alt="MY ALT TEXT"/>
+          </figure>
+          <h2 class="subtitle has-text-centered">
+            Comparison between the demonstrated trajectories (dashed lines) and the executed trajectories (red solid lines).
+          </h2>
         </div>
       </div>
     </div>
@@ -257,47 +316,16 @@
 
 
 
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+      
+        <div class="content is-centered">
+          <h1>
+            Thank you for your attention.
+          </h1>
         </div>
-      </div>
+
     </div>
   </div>
 </footer>
