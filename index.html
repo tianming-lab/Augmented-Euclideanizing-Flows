@@ -43,6 +43,10 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+          onload="renderMathInElement(document.body);"></script>
 </head>
 <body>
 
@@ -127,13 +131,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="static/images/algorithm_framework.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Structure of AEF. The conditional normalizing flows model takes the robotic arm's end-effector position $\mathbf{x}_c$ as input and utilizes the representation $\mathbf{h}$ obtained from feature extraction of environmental images ${{\mathbf{x}}_{nc}}$ as conditions. This setup maps the inputs into a latent variable space. Within this space, a dynamical system is defined by $\mathbf{\dot{z}}=-\mathbf{z}$, where the velocity is modulated by fully connected layers and ensured to be positive through exponential transformation. Ultimately, the desired end-effector velocity output in task space is achieved by computing the inverse of the Jacobian matrix of latent variable $\mathbf{z}$ concerning ${{\mathbf{x}}_{c}}$, mapping the latent space velocity back to task space. 
       </h2>
     </div>
   </div>
@@ -148,7 +148,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Imitation learning strategies based on dynamical systems have demonstrated excellent performance in terms of stability and safety. However, most existing approaches are limited to handling single tasks or skills and struggle with complex observation data such as images. They often perform poorly in tasks that require sophisticated visual perception or involve various scenarios. To address these limitations, this paper proposes the augmented Euclideanizing flows method, which constructs a parameterized family of diffeomorphisms by encoding complex high-dimensional data into conditional inputs, thereby enabling a unified latent-space mapping for trajectories across multiple scenarios. This approach not only allows the learned dynamical system to handle high-dimensional observations such as images and accommodate various tasks, but also ensures that different task spaces can share the stability properties of the dynamical system within the shared latent space. During training, the model implicitly learns the information of the goal by guiding the target toward the origin in the latent space, eliminating the need for a goal detection module during inference. The method is supported by an in-depth theoretical analysis and validated through experiments on benchmark datasets and deployment in real-world robotic systems. Experimental results confirm its capability to perform stable multi-task modeling and handle high-dimensional observations.
           </p>
         </div>
       </div>
