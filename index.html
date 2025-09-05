@@ -126,110 +126,6 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- LASA 手写数据集仿真实验 -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">I. LASA Handwriting Dataset Experiment</h2>
-      <p>The learned vector fields and integrated trajectories produced by CNN, ANDPs and AEF models. The blue curves represent the expert demonstrations, while the green curves show the integral trajectories from the starting points of the demonstration. </p>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item has-text-centered">
-          <!-- Your image here -->
-          <figure class="image is-16by9">
-            <img src="static/images/lasa_cnn.svg" alt="MY ALT TEXT" style="object-fit: contain;"/>
-          </figure>
-          <h2 class="subtitle has-text-centered">
-            The velocity fields and integrated trajectories learned by CNN on the LASA handwriting dataset.
-          </h2>
-        </div>
-        <div class="item has-text-centered">
-          <!-- Your image here -->
-          <figure class="image is-16by9">
-            <img src="static/images/lasa_andps.svg" alt="MY ALT TEXT" style="object-fit: contain;"/>
-          </figure>
-          <h2 class="subtitle has-text-centered">
-            The velocity fields and integrated trajectories learned by ANDPs on the LASA handwriting dataset.
-          </h2>
-        </div>
-        <div class="item has-text-centered">
-          <!-- Your image here -->
-          <figure class="image is-16by9">
-            <img src="static/images/lasa_aef.svg" alt="MY ALT TEXT" style="object-fit: contain;"/>
-          </figure>
-          <h2 class="subtitle has-text-centered">
-            The velocity fields and integrated trajectories learned by AEF on the LASA handwriting dataset.
-          </h2>
-        </div>
-
-        <div class="item has-text-centered">
-          <!-- Your image here -->
-          <figure class="image is-16by9">
-            <img src="static/images/rmse_sea.svg" alt="MY ALT TEXT" style="object-fit: contain;"/>
-          </figure>
-          <h2 class="subtitle has-text-centered">
-            Box plots of RMSE and SEA for CNN, ANDPs, and AEF on the LASA handwriting dataset.
-          </h2>
-        </div>
-    </div>
-  </div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">II. Real-World Robot Experiment</h2>
-      <h3 class="title is-4">A. Path Selection to Reach the Target in Different Scenarios</h3>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/traj_box.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Bypass a box from top.
-          </h2>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/traj_cup_holder.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Bypass a cup holder from the right side.
-          </h2>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/traj_stick.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Bypass a wooden stick from the left side.
-          </h2>
-        </div>
-        <div class="item item-image4 has-text-centered">
-          <!-- Your image here -->
-          <figure class="image is-16by9">
-            <img src="static/images/change_traj.svg" alt="MY ALT TEXT"/>
-          </figure>
-          <h2 class="subtitle has-text-centered">
-            Comparison between the demonstrated trajectories (dashed lines) and the executed trajectories (solid lines).
-          </h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -239,72 +135,11 @@
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/obj_left.mp4"
+            <source src="static/videos/AEF.mp4"
             type="video/mp4">
           </video>
           <h2 class="subtitle has-text-centered">
             Reaching the left target point.
-          </h2>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/obj_middle.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Reaching the middle target point.
-          </h2>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/obj_right.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Reaching the right target point.
-          </h2>
-        </div>
-        <div class="item item-image4">
-          <!-- Your image here -->
-          <figure class="image is-16by9">
-            <img src="static/images/move_obj.svg" alt="MY ALT TEXT"/>
-          </figure>
-          <h2 class="subtitle has-text-centered">
-            Comparison between the demonstrated trajectories (dashed lines) and the executed trajectories (solid lines).
-          </h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h3 class="title is-4">C. Target Reaching under Human-Induced Disturbances</h3>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/obj_disturbance.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Reaching the target point under human-induced disturbances.
-          </h2>
-        </div>
-        <div class="item item-image4">
-          <!-- Your image here -->
-          <figure class="image is-16by9">
-            <img src="static/images/move_obj_disturbance.svg" alt="MY ALT TEXT"/>
-          </figure>
-          <h2 class="subtitle has-text-centered">
-            Comparison between the demonstrated trajectories (dashed lines) and the executed trajectory (red solid line).
           </h2>
         </div>
       </div>
