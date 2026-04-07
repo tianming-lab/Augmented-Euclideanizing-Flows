@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
@@ -26,15 +27,13 @@
 
   <title>Augmented Euclideanizing Flows: Stable and Flexible Sensorimotor Learning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,26 +43,32 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
-	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
-	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			renderMathInElement(document.body, {
-			  // customised options
-			  // • auto-render specific keys, e.g.:
-			  delimiters: [
-				  {left: '$$', right: '$$', display: true},
-				  {left: '$', right: '$', display: false},
-				  {left: '\\(', right: '\\)', display: false},
-				  {left: '\\[', right: '\\]', display: true}
-			  ],
-			  // • rendering keys, e.g.:
-			  throwOnError : false
-			});
-		});
-	</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+    integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
+    integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+    integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        // customised options
+        // • auto-render specific keys, e.g.:
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false },
+          { left: '\\[', right: '\\]', display: true }
+        ],
+        // • rendering keys, e.g.:
+        throwOnError: false
+      });
+    });
+  </script>
 </head>
+
 <body>
 
 
@@ -72,101 +77,149 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Augmented Euclideanizing Flows: Stable and Flexible Sensorimotor Learning</h1>
+            <h1 class="title is-1 publication-title">Augmented Euclideanizing Flows: Stable and Flexible Sensorimotor
+              Learning</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block"><a href="" target="_blank">Tianming Zhang</a><sup>a,b,c,e</sup>,</span>
+              <span class="author-block"><a href="" target="_blank">Feida Gu</a><sup>a,b,c,e</sup>,</span>
+              <span class="author-block"><a href="https://robot.tongji.edu.cn/info/1256/2086.htm" target="_blank">Zhipeng Wang</a><sup>a,b,c,d,*</sup>,</span>
+              <span class="author-block"><a href="https://robot.tongji.edu.cn/info/1256/2089.htm" target="_blank">Bin Cheng</a><sup>a,b,c,d</sup>,</span>
+              <span class="author-block"><a href="https://robot.tongji.edu.cn/info/1256/2085.htm" target="_blank">Yanmin Zhou</a><sup>a,b,c,d</sup>,</span>
+              <span class="author-block"><a href="https://robot.tongji.edu.cn/info/1256/2083.htm" target="_blank">Bin He</a><sup>a,b,c,d</sup></span>
+            </div>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your institution and conference/journal info -->
+              <span class="author-block"><sup>a</sup>Shanghai Research Institute for Intelligent Autonomous Systems</span>
+              <span class="author-block"><sup>b</sup>National Key Laboratory of Autonomous Intelligent Unmanned Systems, Tongji University</span>
+              <span class="author-block"><sup>c</sup>Frontiers Science Center for Intelligent Autonomous Systems</span>
+              <span class="author-block"><sup>d</sup>College of Electronics and Information Engineering, Tongji University</span>
+              <span class="author-block"><sup>e</sup>Shanghai Institute of Intelligent Science and Technology, Tongji University</span>
+              <!-- TODO: Remove this line if no equal contribution -->
+              <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
 
-              <!-- Github link -->
-              <span class="link-block">
-                <a href="https://anonymous.4open.science/r/aef-3CD4/" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                </a>
-              </span>
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://anonymous.4open.science/r/aef-3CD4/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body has-text-centered" >
-      <img src="static/images/algorithm_framework.svg" alt="MY ALT TEXT"/>  
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body has-text-centered">
+        <img src="static/images/algorithm_framework.svg" alt="MY ALT TEXT" />
+      </div>
+      <p>
+        Structure of AEF. The conditional normalizing flows model takes the robotic arm's end-effector pose
+        $\mathbf{x}_c$ as input and utilizes the representation $\mathbf{h}$ obtained from feature extraction of
+        environmental images ${{\mathbf{x}}_{nc}}$ as conditions. This setup maps the inputs into a latent variable
+        space. Within this space, a dynamical system is defined by $\mathbf{\dot{z}}=-\mathbf{z}$, where the velocity is
+        modulated by fully connected layers and ensured to be positive through exponential transformation. Ultimately,
+        the desired end-effector velocity output in task space is achieved by computing the inverse of the Jacobian
+        matrix of latent variable $\mathbf{z}$ concerning ${{\mathbf{x}}_{c}}$, mapping the latent space velocity back
+        to task space.
+      </p>
     </div>
-    <p>
-      Structure of AEF. The conditional normalizing flows model takes the robotic arm's end-effector position $\mathbf{x}_c$ as input and utilizes the representation $\mathbf{h}$ obtained from feature extraction of environmental images ${{\mathbf{x}}_{nc}}$ as conditions. This setup maps the inputs into a latent variable space. Within this space, a dynamical system is defined by $\mathbf{\dot{z}}=-\mathbf{z}$, where the velocity is modulated by fully connected layers and ensured to be positive through exponential transformation. Ultimately, the desired end-effector velocity output in task space is achieved by computing the inverse of the Jacobian matrix of latent variable $\mathbf{z}$ concerning ${{\mathbf{x}}_{c}}$, mapping the latent space velocity back to task space. 
-    </p>
-  </div>
-</section>
-<!-- End teaser video -->
+  </section>
+  <!-- End teaser video -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Imitation learning with dynamical systems ensures stability, but often fails in multitask settings with high-dimensional observations. We propose augmented Euclideanizing flows (AEF), a framework that constructs diffeomorphic mappings from complex observations to a shared latent space, enabling stable policy learning across tasks. To improve robustness against various visual variations and to utilize asynchronously collected or unlabeled data, the framework incorporates a constraint on semantic consistency during training. In addition, implicit target learning is achieved by aligning goals with the latent-space origin, removing the need for explicit detection. The approach is supported by theoretical analysis and validated in simulation and real-world robotic experiments, demonstrating stable multitask modeling and effective handling of high-dimensional observations.
-          </p>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Dynamical system-based imitation learning supports formal analysis of system behavior, but often lacks flexibility in multitask settings with high-dimensional observations. To address this, we propose the Augmented Euclideanizing Flows (AEF) framework, which constructs diffeomorphic mappings from complex observations to a shared latent space that incorporates exponentially convergent dynamical systems as a structured prior, providing a robust basis for policy learning. To mitigate the impact of time-varying visual features on latent space consistency, the framework introduces a semantic consistency regularization term during training as a soft constraint, enhancing robustness against visual disturbances and supporting the use of asynchronously collected and unlabeled data. Additionally, by aligning the goal with the latent space origin, implicit target learning is achieved, eliminating the need for explicit detection. Experiments in simulation and real-world settings demonstrate that AEF effectively maintains task performance in disturbed environments.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
+  <!-- End paper abstract -->
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" controls muted height="100%" preload="auto">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/AEF_ICRA_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        This video highlights our approach and demonstrates its performance on real robot manipulation tasks.
-      </h2>
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- TODO: Replace with your teaser video -->
+        <!-- <video poster="" id="tree" controls muted height="100%" preload="auto">
+        <source src="static/videos/EFVSDS_Experiment.mp4" type="video/mp4">
+      </video> -->
+        <div class="publication-video">
+          <!-- TODO: Replace with your YouTube video ID -->
+          <iframe src="https://drive.google.com/file/d/1CLfRf9cVXX_MWkXNnNL6zVMtNVrWy0-o/preview" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <!-- TODO: Replace with your video description -->
+        <h2 class="subtitle has-text-centered">
+          This video highlights our approach and demonstrates its performance on real robot manipulation tasks.
+        </h2>
+      </div>
     </div>
-  </div>
-</section>
-<!-- End video carousel -->
+  </section>
+  <!-- End video carousel -->
 
 
 
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
 
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      
         <div class="content is-centered">
           <h1>
             Thank you for your attention.
           </h1>
         </div>
 
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
 
-    <!-- End of Statcounter Code -->
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            </p>
 
-  </body>
-  </html>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
