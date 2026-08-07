@@ -148,7 +148,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Dynamical system-based imitation learning supports formal analysis of system behavior, but often lacks flexibility in multitask settings with high-dimensional observations. To address this, we propose the Augmented Euclideanizing Flows (AEF) framework, which constructs diffeomorphic mappings from complex observations to a shared latent space that incorporates exponentially convergent dynamical systems as a structured prior, providing a robust basis for policy learning. To mitigate the impact of time-varying visual features on latent space consistency, the framework introduces a semantic consistency regularization term during training as a soft constraint, enhancing robustness against visual disturbances and supporting the use of asynchronously collected and unlabeled data. Additionally, by aligning the goal with the latent space origin, implicit target learning is achieved, eliminating the need for explicit detection. Experiments in simulation and real-world settings demonstrate that AEF effectively maintains task performance in disturbed environments.
+              Dynamical system-based imitation learning supports formal analysis of system behavior, but often lacks flexibility in multitask settings with high-dimensional observations. To address this, we propose the Augmented Euclideanizing Flows (AEF) framework, which constructs diffeomorphic mappings from complex observations to a shared latent space that incorporates exponentially convergent dynamical systems as a structured prior, providing a robust basis for policy learning. To mitigate the impact of time-varying visual features on latent space consistency, the framework introduces a semantic consistency regularization term during training as a soft constraint, enhancing robustness against visual disturbances and supporting the use of asynchronously collected and unlabeled data. Additionally, AEF introduces bidirectional latent target alignment for adaptive goal inference without explicit target detection. Theoretical analysis and experiments in simulation and real-world robotic environments demonstrate the effectiveness of AEF under visual disturbances and varying task conditions.
             </p>
           </div>
         </div>
@@ -159,28 +159,257 @@
 
 
   <!-- Teaser video-->
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <!-- TODO: Replace with your teaser video -->
-        <!-- <video poster="" id="tree" controls muted height="100%" preload="auto">
-        <source src="static/videos/EFVSDS_Experiment.mp4" type="video/mp4">
-      </video> -->
+
+    <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">This video provides an overview of our approach </h2>
         <div class="publication-video">
-          <!-- TODO: Replace with your YouTube video ID -->
-          <iframe src="https://drive.google.com/file/d/1CLfRf9cVXX_MWkXNnNL6zVMtNVrWy0-o/preview" frameborder="0"
-            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe
+            src="https://drive.google.com/file/d/1_m_ql9gZAe85ONVMYSn0_b3gDc_-nB1L/preview"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+          </iframe>
         </div>
-        <!-- TODO: Replace with your video description -->
-        <h2 class="subtitle has-text-centered">
-          This video highlights our approach and demonstrates its performance on real robot manipulation tasks.
-        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End video carousel -->
+
+  <!-- Video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+
+        <h2 class="title is-3">1. LASA Handwriting Dataset Experiment</h2>
+
+        <div id="results-carousel" class="carousel results-carousel">
+
+          <div class="item item-video1">
+            <div class="publication-video">
+              <iframe
+                src="https://drive.google.com/file/d/1mscerLHwF23zCsJXAvZqtVJPFA4KXoUY/preview"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3 class="subtitle has-text-centered carousel-caption">
+              Task 1 — Baseline Comparison on LASA Tasks
+            </h3>
+          </div>
+
+          <div class="item item-video2">
+            <div class="publication-video">
+              <iframe
+                src="https://drive.google.com/file/d/1BaS6mlRq0Hx-1XhIK6WcG0b_RTp3zReX/preview"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3 class="subtitle has-text-centered carousel-caption">
+              Task 2 — Target Switching Adaptation
+            </h3>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!-- End video carousel -->
 
 
+    <!-- Video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+
+        <h2 class="title is-3">2. Real-World Robot Experiment</h2>
+
+        <h2 class="title is-3">2.1 Grasping </h2>
+
+        <div id="results-carousel" class="carousel results-carousel">
+
+          <div class="item item-video1">
+            <div class="publication-video">
+              <iframe
+                src="https://drive.google.com/file/d/1i5vKtYdOpQWrMFWptr-ehzi3ynUxYdeu/preview"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3 class="subtitle has-text-centered carousel-caption">
+              Algorithm — BC
+            </h3>
+          </div>
+
+          <div class="item item-video2">
+            <div class="publication-video">
+              <iframe
+                src="https://drive.google.com/file/d/1Ydk3SK2zZG4YOQ8bKZ6hzVDrInL5olvb/preview"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3 class="subtitle has-text-centered carousel-caption">
+              Algorithm — AEF without Semantic Consistency Regularization
+            </h3>
+          </div>
+
+          <div class="item item-video3">
+            <div class="publication-video">
+              <iframe
+                src="https://drive.google.com/file/d/1w6AKAnaX4BZsM7O-hfGVWQs1fpwA4yyv/preview"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3 class="subtitle has-text-centered carousel-caption">
+              Algorithm — AEF
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End video carousel -->
+
+  <!-- Video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+
+        <h2 class="title is-3">2.2 Pouring </h2>
+
+        <div id="results-carousel" class="carousel results-carousel">
+
+          <div class="item item-video1">
+            <div class="publication-video">
+              <iframe
+                src="https://drive.google.com/file/d/1UsOzbIexrOVY6LXlRlJvab9fa-LF236r/preview"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3 class="subtitle has-text-centered carousel-caption">
+              Algorithm — BC
+            </h3>
+          </div>
+
+          <div class="item item-video2">
+            <div class="publication-video">
+              <iframe
+                src="https://drive.google.com/file/d/1APgsWO8E8yPBEpLmP7XcDLWci8i0oFtw/preview"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3 class="subtitle has-text-centered carousel-caption">
+              Algorithm — AEF without Semantic Consistency Regularization
+            </h3>
+          </div>
+
+          <div class="item item-video3">
+            <div class="publication-video">
+              <iframe
+                src="https://drive.google.com/file/d/1o87PV0juU0bVyRtmCgUMLmnQ3tJkEdQ0/preview"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3 class="subtitle has-text-centered carousel-caption">
+              Algorithm — AEF
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End video carousel -->
+
+  <!-- Video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+
+        <h2 class="title is-3">2.3 Adaptation to Unseen Configurations </h2>
+
+        <div id="results-carousel" class="carousel results-carousel">
+
+          <div class="item item-video1">
+            <div class="publication-video">
+              <iframe
+                src="https://drive.google.com/file/d/1mDOHpCAnjmYdSpE9y_I0eLgZu6G3QKGx/preview"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3 class="subtitle has-text-centered carousel-caption">
+              Algorithm — BC
+            </h3>
+          </div>
+
+          <div class="item item-video2">
+            <div class="publication-video">
+              <iframe
+                src="https://drive.google.com/file/d/1EcR3OAWmCDRpnV3FToBWOo0AN9I11MK9/preview"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3 class="subtitle has-text-centered carousel-caption">
+              Algorithm — AEF without Semantic Consistency Regularization
+            </h3>
+          </div>
+
+          <div class="item item-video3">
+            <div class="publication-video">
+              <iframe
+                src="https://drive.google.com/file/d/1SsYCyJAANxn7B7H7f4EYvT5QCmEGd7rY/preview"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3 class="subtitle has-text-centered carousel-caption">
+              Algorithm — AEF
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End video carousel -->
+
+    <!-- Video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">2.4 Robustness to Disturbances </h2>
+        <div class="publication-video">
+          <iframe
+            src="https://drive.google.com/file/d/16YF6BZKaf0tm96jIbQuStHxUFtb5dn7N/preview"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <h3 class="subtitle has-text-centered carousel-caption">
+          Algorithm — AEF
+        </h3>
+      </div>
+    </div>
+  </section>
+  <!-- End video carousel -->
 
   <footer class="footer">
     <div class="container">
